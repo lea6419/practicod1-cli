@@ -1,0 +1,11 @@
+bundle 
+--output
+C:\Users\user1\Desktop\run1\lr.txt
+--language 
+all
+--remove-empty-lines 
+True
+--sort 
+True
+--autor 
+l

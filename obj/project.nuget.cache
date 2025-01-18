@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fDs0PJPqtcxPS6NnKATHevAaVNbAHjBalvq4Zjpeel2mF2jITup2Nf6YQt3YTFrn5rnS/1FYKsmCWvvY3Nt08Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\לימודים\\net core\\practicom\\a\\a.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\system.commandline\\2.0.0-beta4.22272.1\\system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+  ],
+  "logs": []
+}
