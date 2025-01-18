@@ -117,60 +117,7 @@ using (StreamWriter writer = new StreamWriter("filleName.rsp"))
 }
 
 });
-//bundleCommandRsp.SetHandler(() =>
-//{
-//    try
-//    {
-//        Console.WriteLine("Enter output path for the response file:");
-//        string outputPath = Console.ReadLine();
 
-//        // בדוק אם התיקייה קיימת ואם לא, צור אותה
-//        string directoryPath = Path.GetDirectoryName(outputPath);
-//        if (!Directory.Exists(directoryPath))
-//        {
-//            Directory.CreateDirectory(directoryPath);
-//        }
-
-//        Console.WriteLine("Enter languages (\"html\", \"c#\", \"python\", \"js\", \"ts\", \"java\"): ");
-//        string languages = Console.ReadLine();
-
-//        Console.WriteLine("If you want to remove empty lines, enter 'y': ");
-//        char removeEmptyLinesInput = Console.ReadLine()[0];
-
-//        Console.WriteLine("If you want to sort by AB, enter 'y': ");
-//        char sortInput = Console.ReadLine()[0];
-
-//        Console.WriteLine("Enter author name: ");
-//        string authorName = Console.ReadLine();
-
-//        // יצירת הקובץ עם StreamWriter
-//        using (StreamWriter writer = new StreamWriter(outputPath))
-//        {
-//            writer.WriteLine("fb bundle ");
-//            writer.WriteLine("--output " + outputPath);
-//            writer.WriteLine("--language " + languages);
-//            bool removeEmptyLines = removeEmptyLinesInput == 'y';
-//            writer.WriteLine("--remove-empty-lines " + removeEmptyLines);
-//            bool sort = sortInput == 'y';
-//            writer.WriteLine("--sort " + sort);
-//            writer.WriteLine("--autor " + authorName);
-//        }
-
-//        Console.WriteLine("Response file created successfully at: " + outputPath);
-//    }
-//    catch (DirectoryNotFoundException)
-//    {
-//        Console.WriteLine("Directory not found. Please check the output path.");
-//    }
-//    catch (IOException ex)
-//    {
-//        Console.WriteLine($"Error creating file: {ex.Message}");
-//    }
-//    catch (Exception ex)
-//    {
-//        Console.WriteLine($"An unexpected error occurred: {ex.Message}");
-//    }
-//});
 
 var rootCommand = new RootCommand("root command for file bundle cli");
 rootCommand.AddCommand(bundleCommand);
